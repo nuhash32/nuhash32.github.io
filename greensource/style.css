@@ -1369,7 +1369,7 @@ div#preloader {
     font-size: 15px;
     line-height: 28px;
     text-align: center;
-    margin-right: 3px;
+    margin-right: 20px;
     width: 30px;
     height: 30px;
     border: 1px solid #1AA15F;
@@ -2285,7 +2285,7 @@ span.q-text {
     outline: 0;
     padding: 12px;
     color: white;
-    background-color: #196F3D;
+    background-color: #1AA15F;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -2927,15 +2927,9 @@ span.email-notes{
   margin-bottom: 16px;
   padding: 0 8px;
 }
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+::selection{
+    background-color: #85C1E9;
 }
-
-
 .container {
   padding: 0 16px;
 }
@@ -2961,16 +2955,81 @@ span.email-notes{
 }
 .btn{
 
-  
+    font-family: Trebuchet MS;
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 10px;
     color: white;
-    background-color: #196F3D;
+    background-color: #1AA15F;
     text-align: center;
     cursor: pointer;
     width: 40%;
-    font-size: 18px;
+    font-size: 12px;
     opacity: 3.0;
 }
+.modal-window{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+}
+.modal-window:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-window>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #1AA15F;
+    color:black;
+}
+.modal-window header{
+    font-weight: bold;
+}
+.modal-close{
+    color:red;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+.modal-close-hover{
+    color: #000;
+
+}
+.modal-window h1{
+    font-family: Comic Sans MS;
+    color: black;
+    font-size: 150%;
+    margin: 0 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
